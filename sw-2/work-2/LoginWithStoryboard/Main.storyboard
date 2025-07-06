@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21481" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qbn-bb-0Ro">
+    <scenes>
+        <!-- Login View Controller Scene -->
+        <scene sceneID="bBl-Et-aZc">
+            <objects>
+                <viewController id="qbn-bb-0Ro" customClass="ViewController" customModule="LoginWithStoryboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B9j-Rf-fA3">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" placeholder="Логин" borderStyle="roundedRect" translatesAutoresizingMaskIntoConstraints="NO" id="loginField"/>
+                            <textField opaque="NO" contentMode="scaleToFill" placeholder="Пароль" borderStyle="roundedRect" secureTextEntry="YES" translatesAutoresizingMaskIntoConstraints="NO" id="passwordField"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="loginButton">
+                                <state key="normal" title="Войти"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="loginField" firstAttribute="centerX" secondItem="B9j-Rf-fA3" secondAttribute="centerX" id="a1"/>
+                            <constraint firstItem="loginField" firstAttribute="centerY" secondItem="B9j-Rf-fA3" secondAttribute="centerY" constant="-60" id="a2"/>
+                            <constraint firstItem="loginField" firstAttribute="width" constant="250" id="a3"/>
+
+                            <constraint firstItem="passwordField" firstAttribute="top" secondItem="loginField" secondAttribute="bottom" constant="20" id="b1"/>
+                            <constraint firstItem="passwordField" firstAttribute="centerX" secondItem="B9j-Rf-fA3" secondAttribute="centerX" id="b2"/>
+                            <constraint firstItem="passwordField" firstAttribute="width" equalTo="loginField" id="b3"/>
+
+                            <constraint firstItem="loginButton" firstAttribute="top" secondItem="passwordField" secondAttribute="bottom" constant="20" id="c1"/>
+                            <constraint firstItem="loginButton" firstAttribute="centerX" secondItem="B9j-Rf-fA3" secondAttribute="centerX" id="c2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="loginButton" id="loginButton-outlet"/>
+                        <outlet property="loginField" destination="loginField" id="loginField-outlet"/>
+                        <outlet property="passwordField" destination="passwordField" id="passwordField-outlet"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FmK-rq-LBj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
