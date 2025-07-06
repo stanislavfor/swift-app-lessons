@@ -1,0 +1,18 @@
+disabled_rules:
+  - line_length
+  - force_cast
+  - force_unwrapping
+
+opt_in_rules:
+  - empty_enum_arguments
+  - explicit_init
+
+included:
+  - Sources
+
+excluded:
+  - Pods
+  - Carthage
+  - .build
+
+reporter: xcode

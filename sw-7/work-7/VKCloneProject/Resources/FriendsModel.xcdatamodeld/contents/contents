@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="FriendsModel" userDefinedModelVersionIdentifier="">
+    <entity name="FriendEntity" representedClassName="FriendEntity" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUIDAttributeType"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="avatar" optional="YES" attributeType="String"/>
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean"/>
+    </entity>
+</model>

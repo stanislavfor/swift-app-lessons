@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <device id="retina6_1" orientation="portrait"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+    </dependencies>
+    <scenes>
+        <!-- Tab Bar Controller -->
+        <scene sceneID="jVb-bc-dwA">
+            <objects>
+                <tabBarController id="mainTabBar" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="tabBar"/>
+                    <connections>
+                        <segue destination="frndNavController" kind="relationship" relationship="viewControllers" id="frndTabSegue"/>
+                        <segue destination="grpNavController" kind="relationship" relationship="viewControllers" id="grpTabSegue"/>
+                        <segue destination="photoNavController" kind="relationship" relationship="viewControllers" id="photoTabSegue"/>
+                    </connections>
+                </tabBarController>
+
+                <!-- Friends Navigation -->
+                <navigationController id="frndNavController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Friends" systemItem="contacts"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill"/>
+                    <connections>
+                        <segue destination="friendsVC" kind="relationship" relationship="rootViewController" id="rootFriendsVC"/>
+                    </connections>
+                </navigationController>
+                <viewController id="friendsVC" customClass="FriendsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="friendsView"/>
+                </viewController>
+
+                <!-- Groups Navigation -->
+                <navigationController id="grpNavController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Groups" systemItem="bookmarks"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill"/>
+                    <connections>
+                        <segue destination="groupsVC" kind="relationship" relationship="rootViewController" id="rootGroupsVC"/>
+                    </connections>
+                </navigationController>
+                <viewController id="groupsVC" customClass="GroupsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="groupsView"/>
+                </viewController>
+
+                <!-- Photos Navigation -->
+                <navigationController id="photoNavController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Photos" systemItem="favorites"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill"/>
+                    <connections>
+                        <segue destination="photosVC" kind="relationship" relationship="rootViewController" id="rootPhotosVC"/>
+                    </connections>
+                </navigationController>
+                <viewController id="photosVC" customClass="PhotosViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="photosView"/>
+                </viewController>
+
+                <placeholder placeholderIdentifier="IBFirstResponder" id="firstResponder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

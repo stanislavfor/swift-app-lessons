@@ -1,0 +1,22 @@
+name: VKCloneProject
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: 15.0
+targets:
+  VKCloneProject:
+    type: application
+    platform: iOS
+    sources: [Sources]
+    resources: [Resources]
+    dependencies: []
+  VKCloneProjectTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [VKCloneProjectTests]
+    dependencies:
+      - target: VKCloneProject
+    settings:
+      base:
+        INFO_PLIST_FILE: VKCloneProjectTests/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.VKCloneProjectTests

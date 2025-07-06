@@ -1,0 +1,1 @@
+enum AppTheme { case light, dark, custom }

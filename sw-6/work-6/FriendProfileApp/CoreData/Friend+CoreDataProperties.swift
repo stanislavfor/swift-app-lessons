@@ -1,0 +1,2 @@
+import CoreData
+extension Friend { }

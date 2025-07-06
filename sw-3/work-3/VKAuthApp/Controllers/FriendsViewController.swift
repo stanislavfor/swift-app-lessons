@@ -1,0 +1,1 @@
+// FriendsViewController for VK friends API
