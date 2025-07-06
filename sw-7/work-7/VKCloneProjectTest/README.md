@@ -1,7 +1,6 @@
+[Назад](../../README.md)
 # Выполнение тестов в проекте
-
 ## Порядок настройки и проведения тестирования
-
 ### Структура проекта
 
 Проверить, что структура проекта включает модули `Tests`, `VKCloneProject.xcodeproj`
@@ -97,5 +96,5 @@ final class VKCloneProjectUITests: XCTestCase {
     }
 }
 ```
-
+[Назад](../../README.md)
 <br><br><br><br>

@@ -3,6 +3,8 @@
 [Переход на Главную страницу](../README.md)
 <hr><hr>
 
+[Переход в Проект с тестами](work-7/VKCloneProjectTest/README.md)
+
 # Разработка приложения на основе языка Swift.
 ## Урок 13 и 14: Архитектуры и тестирование
 ### Описание
@@ -196,7 +198,9 @@ final class VKCloneProjectUITests: XCTestCase {
     }
 }
 ```
+<br><br>
 
+[Переход в Проект с тестами](work-7/VKCloneProjectTest/README.md)
 
 <br><br>
 
