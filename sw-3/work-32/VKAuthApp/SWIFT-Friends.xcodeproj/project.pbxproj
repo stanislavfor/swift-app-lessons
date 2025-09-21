@@ -1,0 +1,271 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A0001010000000000000001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1001010000000000000001 /* AppDelegate.swift */; };
+		1A0001020000000000000001 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1001020000000000000001 /* SceneDelegate.swift */; };
+		1A0001030000000000000001 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1001030000000000000001 /* ViewController.swift */; };
+		1A0001040000000000000001 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1001040000000000000001 /* FriendsViewController.swift */; };
+		1A0001050000000000000001 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1001050000000000000001 /* GroupsViewController.swift */; };
+		1A0001060000000000000001 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1001060000000000000001 /* PhotosViewController.swift */; };
+		1A0001070000000000000001 /* VKService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1001070000000000000001 /* VKService.swift */; };
+		1A0001080000000000000001 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1001080000000000000001 /* NetworkService.swift */; };
+		1A0001090000000000000001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A2001010000000000000001 /* Main.storyboard */; };
+		1A00010A0000000000000001 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A2001020000000000000001 /* LaunchScreen.storyboard */; };
+		1A00010B0000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A2001030000000000000001 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A1001010000000000000001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A1001020000000000000001 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1A1001030000000000000001 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A1001040000000000000001 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		1A1001050000000000000001 /* GroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
+		1A1001060000000000000001 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		1A1001070000000000000001 /* VKService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKService.swift; sourceTree = "<group>"; };
+		1A1001080000000000000001 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+
+		1A1001FF0000000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+
+		1A2001010000000000000001 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A2001020000000000000001 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A2001030000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+
+		1A3001010000000000000001 /* SWIFT-Friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = "SWIFT-Friends.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A4001010000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A5001010000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				1A6001010000000000000001 /* SWIFT-Friends */,
+				1A6001020000000000000001 /* Base.lproj */,
+				1A2001020000000000000001 /* LaunchScreen.storyboard */,
+				1A7001010000000000000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+
+		1A6001010000000000000001 /* SWIFT-Friends */ = {
+			isa = PBXGroup;
+			path = "SWIFT-Friends";
+			sourceTree = "<group>";
+			children = (
+				1A1001010000000000000001 /* AppDelegate.swift */,
+				1A1001020000000000000001 /* SceneDelegate.swift */,
+				1A1001030000000000000001 /* ViewController.swift */,
+				1A1001040000000000000001 /* FriendsViewController.swift */,
+				1A1001050000000000000001 /* GroupsViewController.swift */,
+				1A1001060000000000000001 /* PhotosViewController.swift */,
+				1A1001070000000000000001 /* VKService.swift */,
+				1A1001080000000000000001 /* NetworkService.swift */,
+				1A2001030000000000000001 /* Assets.xcassets */,
+				1A1001FF0000000000000001 /* Info.plist */,
+			);
+		};
+
+		1A6001020000000000000001 /* Base.lproj */ = {
+			isa = PBXGroup;
+			path = "Base.lproj";
+			sourceTree = "<group>";
+			children = (
+				1A2001010000000000000001 /* Main.storyboard */,
+			);
+		};
+
+		1A7001010000000000000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A3001010000000000000001 /* SWIFT-Friends.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A8001010000000000000001 /* SWIFT-Friends */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AA001010000000000000001 /* Build configuration list for PBXNativeTarget "SWIFT-Friends" */;
+			buildPhases = (
+				1A9001010000000000000001 /* Sources */,
+				1A4001010000000000000001 /* Frameworks */,
+				1A9001020000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SWIFT-Friends";
+			productName = "SWIFT-Friends";
+			productReference = 1A3001010000000000000001 /* SWIFT-Friends.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A9000010000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = "YourName";
+				TargetAttributes = {
+					1A8001010000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 1AA001020000000000000001 /* Build configuration list for PBXProject "SWIFT-Friends" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A5001010000000000000001;
+			productRefGroup = 1A7001010000000000000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A8001010000000000000001 /* SWIFT-Friends */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A9001020000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A00010B0000000000000001 /* Assets.xcassets in Resources */,
+				1A0001090000000000000001 /* Main.storyboard in Resources */,
+				1A00010A0000000000000001 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A9001010000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0001010000000000000001 /* AppDelegate.swift in Sources */,
+				1A0001020000000000000001 /* SceneDelegate.swift in Sources */,
+				1A0001030000000000000001 /* ViewController.swift in Sources */,
+				1A0001040000000000000001 /* FriendsViewController.swift in Sources */,
+				1A0001050000000000000001 /* GroupsViewController.swift in Sources */,
+				1A0001060000000000000001 /* PhotosViewController.swift in Sources */,
+				1A0001070000000000000001 /* VKService.swift in Sources */,
+				1A0001080000000000000001 /* NetworkService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1AB001010000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "SWIFT-Friends/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.VKAuthApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AB001020000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "SWIFT-Friends/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.VKAuthApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AA001010000000000000001 /* Build configuration list for PBXNativeTarget "SWIFT-Friends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AB001010000000000000001 /* Debug */,
+				1AB001020000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1AA001020000000000000001 /* Build configuration list for PBXProject "SWIFT-Friends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AB001010000000000000001 /* Debug */,
+				1AB001020000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+	};
+/* End objects */
+
+	rootObject = 1A9000010000000000000001 /* Project object */;
+}

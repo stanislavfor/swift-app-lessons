@@ -1,0 +1,6 @@
+// Release build configuration for VK OAuth
+// Use your PRODUCTION VK App. Do NOT commit real values if you prefer to keep them private.
+
+VK_CLIENT_ID = __PUT_YOUR_VK_APP_ID__  // <-> замените на реальный PROD ID
+VK_SCOPE = friends,groups,photos
+VK_API_VERSION = 5.131

@@ -1,0 +1,6 @@
+// Debug build configuration for VK OAuth
+// Use your DEV/TEST VK App. Safe to keep different from production.
+
+VK_CLIENT_ID = __PUT_YOUR_VK_APP_ID__  // <- заменить на собственный DEV/TEST ID
+VK_SCOPE = friends,groups,photos,offline
+VK_API_VERSION = 5.131

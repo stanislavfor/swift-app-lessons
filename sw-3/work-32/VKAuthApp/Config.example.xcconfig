@@ -1,0 +1,5 @@
+// Example configuration for VK OAuth. Copy to Config.xcconfig and set real values.
+
+VK_CLIENT_ID = __PUT_YOUR_VK_APP_ID__  // -> шаблон с плейсхолдером
+VK_SCOPE = friends,groups,photos
+VK_API_VERSION = 5.131

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0"
+          toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none"
+          useAutolayout="YES" launchScreen="NO" initialViewController="NAV-1">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+    </dependencies>
+    <scenes>
+        <!-- Navigation Controller -->
+        <scene sceneID="SCN-Nav">
+            <objects>
+                <navigationController id="NAV-1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NAV-BAR-1"/>
+                    <connections>
+                        <segue destination="VC-Auth" kind="relationship" relationship="rootViewController" id="REL-Root"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nav-First" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+
+        <!-- ViewController (Auth WKWebView, создаётся кодом) -->
+        <scene sceneID="SCN-Auth">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="VC-Auth" customClass="ViewController" customModule="$(PRODUCT_MODULE_NAME)" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AUTH-View">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <!-- Можно ничего не класть: WKWebView мы добавляем в коде -->
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="VK Login is loading..." textAlignment="center" numberOfLines="1" id="AUTH-Hint">
+                                <rect key="frame" x="20" y="60" width="353" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AUTH-Safe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="VK Login" id="NAVITEM-AUTH"/>
+                    <connections>
+                        <segue destination="VC-Friends" kind="show" identifier="showFriends" id="SEG-Auth-Friends"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Auth-First" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+
+        <!-- FriendsViewController -->
+        <scene sceneID="SCN-Friends">
+            <objects>
+                <viewController storyboardIdentifier="FriendsViewController" id="VC-Friends" customClass="FriendsViewController" customModule="$(PRODUCT_MODULE_NAME)" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FR-View">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" id="BTN-Groups" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="40" y="120" width="140" height="44"/>
+                                <state key="normal" title="Группы"/>
+                                <connections>
+                                    <!-- touchUpInside -> FriendsViewController.showGroups(_:) -->
+                                    <action selector="showGroups:" destination="VC-Friends" event="touchUpInside" id="ACT-Groups"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" id="BTN-Photos" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="40" y="180" width="140" height="44"/>
+                                <state key="normal" title="Фотографии"/>
+                                <connections>
+                                    <!-- touchUpInside -> FriendsViewController.showPhotos(_:) -->
+                                    <action selector="showPhotos:" destination="VC-Friends" event="touchUpInside" id="ACT-Photos"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="BTN-Groups" firstAttribute="top" secondItem="FR-Safe" secondAttribute="top" constant="32" id="C1"/>
+                            <constraint firstItem="BTN-Groups" firstAttribute="leading" secondItem="FR-Safe" secondAttribute="leading" constant="16" id="C2"/>
+                            <constraint firstItem="BTN-Photos" firstAttribute="top" secondItem="BTN-Groups" secondAttribute="bottom" constant="16" id="C3"/>
+                            <constraint firstItem="BTN-Photos" firstAttribute="leading" secondItem="FR-Safe" secondAttribute="leading" constant="16" id="C4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FR-Safe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Друзья" id="NAVITEM-FR"/>
+                    <connections>
+                        <segue destination="VC-Groups" kind="show" identifier="showGroups" id="SEG-FR-GR"/>
+                        <segue destination="VC-Photos" kind="show" identifier="showPhotos" id="SEG-FR-PH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FR-First" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+
+        <!-- GroupsViewController -->
+        <scene sceneID="SCN-Groups">
+            <objects>
+                <viewController storyboardIdentifier="GroupsViewController" id="VC-Groups" customClass="GroupsViewController" customModule="$(PRODUCT_MODULE_NAME)" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GR-View">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <viewLayoutGuide key="safeArea" id="GR-Safe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Группы" id="NAVITEM-GR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GR-First" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+
+        <!-- PhotosViewController -->
+        <scene sceneID="SCN-Photos">
+            <objects>
+                <viewController storyboardIdentifier="PhotosViewController" id="VC-Photos" customClass="PhotosViewController" customModule="$(PRODUCT_MODULE_NAME)" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PH-View">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PH-Safe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Фотографии" id="NAVITEM-PH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PH-First" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

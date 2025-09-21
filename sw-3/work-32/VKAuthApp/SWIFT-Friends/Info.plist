@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Базовая информация о бандле -->
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+    <key>CFBundleExecutable</key>
+    <string>$(EXECUTABLE_NAME)</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.example.VKAuthApp</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>VKAuthApp</string>
+    <!-- Имя, отображаемое на устройстве -->
+    <key>CFBundleDisplayName</key>
+    <string>SWIFT-Friends</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+
+    <!-- Storyboards -->
+    <key>UILaunchStoryboardName</key>
+    <string>LaunchScreen</string>
+    <key>UIMainStoryboardFile</key>
+    <string>Main</string>
+
+    <!-- SceneDelegate для iOS 13+ -->
+    <key>UIApplicationSceneManifest</key>
+    <dict>
+        <key>UIApplicationSupportsMultipleScenes</key>
+        <false/>
+        <key>UISceneConfigurations</key>
+        <dict>
+            <key>UIWindowSceneSessionRoleApplication</key>
+            <array>
+                <dict>
+                    <key>UISceneConfigurationName</key>
+                    <string>Default Configuration</string>
+                    <key>UISceneDelegateClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+                    <key>UISceneStoryboardFile</key>
+                    <string>Main</string>
+                  <key>VKClientId</key>
+  <string>$(VK_CLIENT_ID)</string>
+  <key>VKScope</key>
+  <string>$(VK_SCOPE)</string>
+  <key>VKApiVersion</key>
+  <string>$(VK_API_VERSION)</string>
+</dict>
+            </array>
+          <key>VKClientId</key>
+  <string>$(VK_CLIENT_ID)</string>
+  <key>VKScope</key>
+  <string>$(VK_SCOPE)</string>
+  <key>VKApiVersion</key>
+  <string>$(VK_API_VERSION)</string>
+</dict>
+      <key>VKClientId</key>
+  <string>$(VK_CLIENT_ID)</string>
+  <key>VKScope</key>
+  <string>$(VK_SCOPE)</string>
+  <key>VKApiVersion</key>
+  <string>$(VK_API_VERSION)</string>
+</dict>
+
+    <!-- Требования девайса -->
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>armv7</string>
+    </array>
+
+    <!-- Ориентации (iPhone). Либо, оставь один пункт -->
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+
+    <!-- (Опционально) ATS. НЕ нужно для VK (https). Как Пример:
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoadsInWebContent</key>
+        <true/>
+      <key>VKClientId</key>
+  <string>$(VK_CLIENT_ID)</string>
+  <key>VKScope</key>
+  <string>$(VK_SCOPE)</string>
+  <key>VKApiVersion</key>
+  <string>$(VK_API_VERSION)</string>
+</dict>
+    -->
+  <key>VKClientId</key>
+  <string>$(VK_CLIENT_ID)</string>
+  <key>VKScope</key>
+  <string>$(VK_SCOPE)</string>
+  <key>VKApiVersion</key>
+  <string>$(VK_API_VERSION)</string>
+</dict>
+</plist>

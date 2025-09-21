@@ -58,7 +58,7 @@
 
 <hr><hr>
 
-[lesson 2](sw-2/README.md)
+[lesson 2](sw-2/work-2v2/README.md)
 <hr><hr>
 
 ## Урок 5,6: Работа с сетью
@@ -82,7 +82,7 @@
 
 <hr><hr>
 
-[lesson 3](sw-3/README.md)
+[lesson 3](sw-3/work-32/README.md)
 <hr><hr>
 
 ## Урок 7,8: Многопоточность
